@@ -8,13 +8,19 @@ html {
   /* Set font size for easy rem calculations */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background: black;
 }
 
 /* Base styles */
 
+@font-face {
+  font-family: "Matrix";
+  src: url('./fonts/Matrix-MZ4P.ttf');
+}
+
 body {
   font-size: 1.8rem;
-  color: white;
+  color: #0F0;
 }
  
 /* Nav */
@@ -26,7 +32,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: red;
+  background-color: black;
+  border-bottom: solid 2px #0F0;
   }
 
   .nav-list {
@@ -38,6 +45,7 @@ body {
     display: block;
     font-size: 2rem;
     padding: 2rem;
+    color: #0F0;
   }
 
 ul {
@@ -46,7 +54,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #0F0;
   }
 
   /* Welcome section */
@@ -58,13 +66,52 @@ a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #000;
+    z-index: 1;
+  }
+
+  .welcome-box {
+    text-align: center;
+    font-family: MATRIX , sans-serif;
+    letter-spacing: 0.3rem;
+    color: #0F0;
+    background-color: black;
+    margin: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    border: solid 1px #0F0;
+  }
+
+  canvas {
+    position: fixed;
+    z-index: -1;
+  }
+
+  /* Work section */
+
+  .projects {
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding-top: 5%;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 10px;
+    grid-auto-rows: 50%;
+  }
+
+  .projects-grid p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: solid 1px #0F0;
+    background-color: black;
   }
 
   /* Contact section */
 
   .contact-section {
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +120,13 @@ a {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: gray;
+  }
+
+  .contact-container {
+    border: solid 1px #0F0;
+    background-color: black;
+    padding-top: 1.5rem;
+    margin-bottom: 15rem;
   }
 
   .contact-details {

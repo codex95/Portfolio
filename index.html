@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <title>Portfolio</title>
+    <link href="https://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
+    <title>Afiq Hamdan - Software Engineer</title>
 </head>
 <body>
 
@@ -24,14 +25,21 @@
       </ul>
     </nav>
 
+<!--Background matrix-->
+<canvas id="matrix"></canvas>
+<script src="./index.js"></script>
+
 <!--Welcome section-->
   <section id="welcome-section" class="welcome-section">
-    <h1>Hey, I am Afiq</h1>
-    <p>a web developer</p>
+    <div class="welcome-box">
+    <h1>Afiq Hamdan</h1>
+    <p>Software Engineer</p>
+  </div>
+  </section>
 
 <!--Work section-->
-  </section>
-  <section id="projects">
+
+  <section id="projects" class="projects">
     <div class="projects-grid">
       <a href="https://codex95.github.io/SurveyForm/" target="_blank" id="profile-link" class="project-tile">
           <p class="project-title">
@@ -58,22 +66,24 @@
 
   <!--Contact section-->
   <section id="contact" class="contact-section">
-    <div class="contact-section-header">
-      <h2>If you are interested</h2>
-      <p>You can reach me on: </p>
-    </div>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/afiq-hamdan-a61713171/" target="_blank" class="btn contact-details">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a id="profile-link" href="https://github.com/codex95" target="_blank" class="btn contact-details">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="mailto:afiqhamdan95@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send an e-mail
-      </a>
-      <a href="tel:+6011-14780565" class="btn contact-details">
-        <i class="fas fa-mobile-alt"></i> Call me
-      </a>
+    <div class="contact-container">
+      <div class="contact-section-header">
+        <h2>If you are interested</h2>
+        <p>You can reach me on: </p>
+      </div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/afiq-hamdan-a61713171/" target="_blank" class="btn contact-details">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a id="profile-link" href="https://github.com/codex95" target="_blank" class="btn contact-details">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="mailto:afiqhamdan95@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send an e-mail
+        </a>
+        <a href="tel:+6011-14780565" class="btn contact-details">
+          <i class="fas fa-mobile-alt"></i> Call me
+        </a>
+      </div>
     </div>
   </section>
 </body>
