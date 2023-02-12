@@ -1,0 +1,11 @@
+@media(max-width:480px) {
+    .text {
+      font-size: 10px;
+    }
+  }
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 5%;
+  }
