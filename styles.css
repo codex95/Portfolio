@@ -1,11 +1,88 @@
-@media(max-width:480px) {
-    .text {
-      font-size: 10px;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  /* Set font size for easy rem calculations */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Base styles */
+
+body {
+  font-size: 1.8rem;
+  color: white;
+}
+ 
+/* Nav */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
   }
-  
-  .nav {
-    position: fixed;
-    top: 0;
-    right: 5%;
+
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+ul {
+    list-style-type: none;
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Welcome section */
+
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+  }
+
+  /* Contact section */
+
+  .contact-section {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: gray;
+  }
+
+  .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 2rem 2rem;
+    border-radius: 2px;
   }
