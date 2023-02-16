@@ -205,6 +205,12 @@ a {
     margin-bottom: 15rem;
   }
 
+  @media (max-width: 28.75em) {
+    .contact-section {
+      margin-top: 40rem;
+    }
+  }
+
   .contact-details {
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
