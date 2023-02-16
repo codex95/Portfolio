@@ -11,6 +11,34 @@ html {
   background: black;
 }
 
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* 320px / 16px = 20em */
+@media (max-width: 20em) {
+  html {
+    font-size: 16%;
+  }
+}
+
 /* Base styles */
 
 @font-face {
@@ -31,7 +59,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   background-color: black;
   border-bottom: solid 2px #0F0;
   }
@@ -64,12 +92,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    margin-top: 7rem;
+    padding-top: 0;
     z-index: 1;
   }
 
   .welcome-box {
+    position: relative;
     text-align: center;
     font-family: MATRIX , sans-serif;
     letter-spacing: 0.3rem;
@@ -85,6 +116,7 @@ a {
   }
 
   .about {
+    position: relative;
     width: 30vw;
     height: 15vh;
     margin: 3rem;
@@ -93,6 +125,8 @@ a {
     line-height: 1.3;
     background-color: black;
     border: solid 2px #0F0;
+    width: 30rem;
+    height: 22rem;
   }
 
   p#name {
@@ -103,6 +137,8 @@ a {
 
   canvas {
     position: fixed;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
   }
 
@@ -121,7 +157,7 @@ a {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 5rem;
+    margin-bottom: 6rem;
   }
 
   .projects-grid p {
@@ -149,6 +185,7 @@ a {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
+    margin-top: 50rem;
   }
 
   .contact-container {
